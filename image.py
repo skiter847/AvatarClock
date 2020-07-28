@@ -19,4 +19,4 @@ def create_image(time: str):
     draw.text((6, 355), progressbar(time), font=progressbar_font, fill='blue') # write progressbar in photo
     draw.text((410, 350), percent(time), font=percent_font, fill='blue')# write percent in photo
 
-    image.save("current_time.png")
+    image.save("clock.png")

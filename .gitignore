@@ -1,4 +1,6 @@
 .idea/
 venv/
 __pycache__/
-current_time.png
+clock.png
+session.session-journal
+session.session
