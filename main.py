@@ -3,6 +3,7 @@ from telethon.tl.functions.photos import UploadProfilePhotoRequest, DeletePhotos
 import os
 from util import current_time
 from image import create_image
+import time
 
 API_ID = os.environ.get('api_id')
 API_HASH = os.environ.get('api_hash')
@@ -21,5 +22,9 @@ def main():
                 client(UploadProfilePhotoRequest(image))
 
 if __name__ == '__main__':
-    main()
+    while True:
+        try:
+            main()
+        except:
+            time.sleep(5)
 
